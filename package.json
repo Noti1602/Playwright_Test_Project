@@ -2,7 +2,12 @@
   "name": "playwright_test_project",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test1:performLogin": "npx playwright test tests/Task1/test1.performLogin.spec.js",
+    "test2:addProductToCart": "npx playwright test tests/Task1/test2.addProductToCart.spec.js",
+    "report": "npx playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
