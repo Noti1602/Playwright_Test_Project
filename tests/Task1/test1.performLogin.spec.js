@@ -26,6 +26,7 @@ test('Verify login functionality and UI elements on the home page', async ({ pag
   // Check that there are more than 3 products
   const products = page.locator(selectors.inventoryPage.productItem);
   const productCount = await products.count();
+  await expect(productCount).not.toHaveCount(0);
   expect(productCount).toBeGreaterThan(3);
 
 });
